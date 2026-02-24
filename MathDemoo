@@ -1,0 +1,27 @@
+package week6;
+
+public class MathDemo {
+
+    public static int min(int a, int b) {
+        if (a < b) {
+            return a;
+        }
+        return b;
+    }
+
+    public static int max(int a, int b) {
+        if (a > b) {
+            return a;
+        }
+        return b;
+    }
+
+    public static int sum(int[] args) {
+        int total = 0;
+        for (int i = 0; i < args.length; i++) {
+            total = total + args[i];
+        }
+        return total;
+    }
+}
+//f.They can be called using the class name without creating an object, they do not depend on instance data, and they are suitable for utility operations.
